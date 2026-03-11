@@ -10,7 +10,7 @@ public class KeybindingRegister {
     public static void register() {
         CRUSH_KEY = new KeyMapping(
             "key.custom_cake.crush",
-            GLFW.GLFW_MOUSE_BUTTON_LEFT,
+            GLFW.GLFW_KEY_G,
             "key.categories.custom_cake"
         );
         KeyMappingRegistry.register(CRUSH_KEY);

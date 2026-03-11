@@ -3,6 +3,7 @@ package dev.xiaoyu.custom_cake.forge;
 import dev.architectury.platform.forge.EventBuses;
 import dev.xiaoyu.custom_cake.CustomCake;
 import dev.xiaoyu.custom_cake.forge.client.CustomCakeForgeClient;
+import dev.xiaoyu.custom_cake.forge.network.SqueezePacket;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -16,6 +17,7 @@ public final class CustomCakeForge {
         CustomCake.init();
         CreativeTab.init(FMLJavaModLoadingContext.get());
         CustomCakeForgeClient.init();
+        SqueezePacket.init();
         modEventBus.register(this);
     }
 }
