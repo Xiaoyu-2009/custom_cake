@@ -1,6 +1,7 @@
 package dev.xiaoyu.custom_cake.register;
 
 import dev.architectury.registry.registries.*;
+import dev.xiaoyu.custom_cake.item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -40,28 +41,19 @@ public final class ItemRegister {
     
     // 附魔金苹果碎块
     public static final RegistrySupplier<Item> ENCHANTED_GOLDEN_APPLE_CRUMBLE = ITEMS.register("enchanted_golden_apple_crumble",
-        () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .nutrition(1).saturationMod(2).build())) {
-            @Override
-            public boolean isFoil(ItemStack stack) {
-                return true;
-            }
-        });
+        EnchantedGoldenAppleCrumble::new);
     
     // 河豚碎块
     public static final RegistrySupplier<Item> PUFFERFISH_CRUMBLE = ITEMS.register("pufferfish_crumble",
-        () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .nutrition(1).build())));
+        PufferfishCrumble::new);
     
     // 金苹果碎块
     public static final RegistrySupplier<Item> GOLDEN_APPLE_CRUMBLE = ITEMS.register("golden_apple_crumble",
-        () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .nutrition(1).saturationMod(2).build())));
+        GoldenAppleCrumble::new);
     
     // 毒马铃薯碎块
     public static final RegistrySupplier<Item> POISONOUS_POTATO_CRUMBLE = ITEMS.register("poisonous_potato_crumble",
-        () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .nutrition(1).build())));
+        PoisonousPotatoCrumble::new);
     
     // 腐肉碎块
     public static final RegistrySupplier<Item> ROTTEN_FLESH_CRUMBLE = ITEMS.register("rotten_flesh_crumble",
@@ -70,8 +62,7 @@ public final class ItemRegister {
     
     // 紫颂果碎块
     public static final RegistrySupplier<Item> CHORUS_FRUIT_CRUMBLE = ITEMS.register("chorus_fruit_crumble",
-        () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .nutrition(1).saturationMod(1).build())));
+        ChorusFruitCrumble::new);
     
     public static void init() {
         ITEMS.register();
