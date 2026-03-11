@@ -20,6 +20,7 @@ public final class CreativeTab {
                 event.accept(CustomCake.POISONOUS_POTATO_CRUMBLE.get());
                 event.accept(CustomCake.ROTTEN_FLESH_CRUMBLE.get());
                 event.accept(CustomCake.CHORUS_FRUIT_CRUMBLE.get());
+                event.accept(CustomCake.CUSTOM_CAKE.get());
             }
         });
     }

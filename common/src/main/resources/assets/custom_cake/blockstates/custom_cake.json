@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "custom_cake:block/custom_cake"
+        }
+    }
+}

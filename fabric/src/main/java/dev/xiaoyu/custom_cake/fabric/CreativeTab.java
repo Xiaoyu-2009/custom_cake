@@ -18,6 +18,7 @@ public final class CreativeTab {
             entries.accept(CustomCake.POISONOUS_POTATO_CRUMBLE.get());
             entries.accept(CustomCake.ROTTEN_FLESH_CRUMBLE.get());
             entries.accept(CustomCake.CHORUS_FRUIT_CRUMBLE.get());
+            entries.accept(CustomCake.CUSTOM_CAKE.get());
         });
     }
 }
