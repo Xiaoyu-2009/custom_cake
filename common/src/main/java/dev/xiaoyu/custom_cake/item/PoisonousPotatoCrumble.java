@@ -10,23 +10,22 @@ import org.jetbrains.annotations.NotNull;
 
 public class PoisonousPotatoCrumble extends Item {
     public PoisonousPotatoCrumble() {
-        super(new Properties()
-            .food(new FoodProperties.Builder()
-                .nutrition(1)
-                .build()));
+        super(new Properties().food(new FoodProperties.Builder()
+            .nutrition(1)
+            .build()));
+    }
+    
+    @Override
+    public int getUseDuration(ItemStack stack) {
+        return 12;
     }
     
     @Override
     public @NotNull ItemStack finishUsingItem(ItemStack stack, Level world, LivingEntity entity) {
         if (entity instanceof Player player && !world.isClientSide) {
-            // 中毒
-            player.addEffect(new MobEffectInstance(
-                MobEffects.POISON,
-                20,
-                0
-            ));
+            player.addEffect(new MobEffectInstance(MobEffects.POISON, 2*20, 0)); // 中毒
         }
-        
-        return stack;
+
+        return super.finishUsingItem(stack, world, entity);
     }
 }

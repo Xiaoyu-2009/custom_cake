@@ -14,11 +14,16 @@ import org.jetbrains.annotations.NotNull;
 
 public class ChorusFruitCrumble extends Item {
     public ChorusFruitCrumble() {
-        super(new Properties()
-            .food(new FoodProperties.Builder()
-                .nutrition(1)
-                .saturationMod(1)
-                .build()));
+        super(new Properties().food(new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationMod(1)
+            .alwaysEat()
+            .build()));
+    }
+    
+    @Override
+    public int getUseDuration(ItemStack stack) {
+        return 12;
     }
     
     @Override

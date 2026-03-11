@@ -10,25 +10,24 @@ import org.jetbrains.annotations.NotNull;
 
 public class GoldenAppleCrumble extends Item {
     public GoldenAppleCrumble() {
-        super(new Properties()
-            .food(new FoodProperties.Builder()
-                .nutrition(1)
-                .saturationMod(2)
-                .alwaysEat()
-                .build()));
+        super(new Properties().food(new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationMod(2)
+            .alwaysEat()
+            .build()));
+    }
+    
+    @Override
+    public int getUseDuration(ItemStack stack) {
+        return 12;
     }
     
     @Override
     public @NotNull ItemStack finishUsingItem(ItemStack stack, Level world, LivingEntity entity) {
         if (entity instanceof Player player && !world.isClientSide) {
-            // 生命恢复
-            player.addEffect(new MobEffectInstance(
-                MobEffects.REGENERATION,
-                40,
-                1
-            ));
+            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 40, 1)); // 生命恢复
         }
-        
-        return stack;
+
+        return super.finishUsingItem(stack, world, entity);
     }
 }

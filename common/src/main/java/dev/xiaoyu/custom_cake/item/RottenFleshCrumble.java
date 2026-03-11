@@ -8,12 +8,10 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
-public class EnchantedGoldenAppleCrumble extends Item {
-    public EnchantedGoldenAppleCrumble() {
+public class RottenFleshCrumble extends Item {
+    public RottenFleshCrumble() {
         super(new Properties().food(new FoodProperties.Builder()
             .nutrition(1)
-            .saturationMod(2)
-            .alwaysEat()
             .build()));
     }
     
@@ -23,19 +21,11 @@ public class EnchantedGoldenAppleCrumble extends Item {
     }
     
     @Override
-    public boolean isFoil(ItemStack stack) {
-        return true;
-    }
-    
-    @Override
     public @NotNull ItemStack finishUsingItem(ItemStack stack, Level world, LivingEntity entity) {
         if (entity instanceof Player player && !world.isClientSide) {
-            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 80, 1)); // 生命恢复
-            player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 1200, 1)); // 伤害吸收
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1200, 0)); // 抗性提升
-            player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1200, 0)); // 抗火
+            player.addEffect(new MobEffectInstance(MobEffects.HUNGER, 140, 0)); // 饥饿
         }
-
+        
         return super.finishUsingItem(stack, world, entity);
     }
 }
