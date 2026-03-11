@@ -1,22 +1,29 @@
 package dev.xiaoyu.custom_cake;
 
-import dev.architectury.registry.CreativeTabRegistry;
-import dev.architectury.registry.registries.*;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
+import dev.architectury.registry.registries.RegistrySupplier;
+import dev.xiaoyu.custom_cake.register.*;
 import net.minecraft.world.item.*;
 
 public final class CustomCake {
     public static final String MOD_ID = "custom_cake";
     public static final String MODID = MOD_ID;
     
-    public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(MOD_ID, Registries.CREATIVE_MODE_TAB);
-
-    public static final RegistrySupplier<CreativeModeTab> CUSTOM_CAKE_TAB = TABS.register("custom_cake", () ->
-        CreativeTabRegistry.create(Component.translatable("itemGroup." + MOD_ID + ".custom_cake"),
-            () -> new ItemStack(Items.CAKE)));
+    public static final RegistrySupplier<CreativeModeTab> CUSTOM_CAKE_TAB = CreativeTabRegister.CUSTOM_CAKE_TAB;
+    public static final RegistrySupplier<Item> WATERMELON_CRUMBLE = ItemRegister.WATERMELON_CRUMBLE;
+    public static final RegistrySupplier<Item> BEETROOT_CRUMBLE = ItemRegister.BEETROOT_CRUMBLE;
+    public static final RegistrySupplier<Item> POTATO_CRUMBLE = ItemRegister.POTATO_CRUMBLE;
+    public static final RegistrySupplier<Item> APPLE_CRUMBLE = ItemRegister.APPLE_CRUMBLE;
+    public static final RegistrySupplier<Item> CARROT_CRUMBLE = ItemRegister.CARROT_CRUMBLE;
+    public static final RegistrySupplier<Item> GOLDEN_CARROT_CRUMBLE = ItemRegister.GOLDEN_CARROT_CRUMBLE;
+    public static final RegistrySupplier<Item> ENCHANTED_GOLDEN_APPLE_CRUMBLE = ItemRegister.ENCHANTED_GOLDEN_APPLE_CRUMBLE;
+    public static final RegistrySupplier<Item> PUFFERFISH_CRUMBLE = ItemRegister.PUFFERFISH_CRUMBLE;
+    public static final RegistrySupplier<Item> GOLDEN_APPLE_CRUMBLE = ItemRegister.GOLDEN_APPLE_CRUMBLE;
+    public static final RegistrySupplier<Item> POISONOUS_POTATO_CRUMBLE = ItemRegister.POISONOUS_POTATO_CRUMBLE;
+    public static final RegistrySupplier<Item> ROTTEN_FLESH_CRUMBLE = ItemRegister.ROTTEN_FLESH_CRUMBLE;
+    public static final RegistrySupplier<Item> CHORUS_FRUIT_CRUMBLE = ItemRegister.CHORUS_FRUIT_CRUMBLE;
 
     public static void init() {
-        TABS.register();
+        CreativeTabRegister.init();
+        ItemRegister.init();
     }
 }

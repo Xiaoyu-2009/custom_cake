@@ -36,6 +36,15 @@ dependencies {
     // 模组菜单
     modImplementation "curse.maven:modmenu-308702:5162837"
 
+    // 苹果皮
+    modImplementation "curse.maven:appleskin-248787:7517366"
+
+    // Cloth Config API
+    modImplementation "curse.maven:cloth-config-348521:5729104"
+
+    // Saturation Plus (吃不停)
+    modImplementation "curse.maven:saturation-plus-959951:7516112"
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }

@@ -1,3 +1,15 @@
 {
-  "itemGroup.custom_cake.custom_cake": "自定义蛋糕"
+  "itemGroup.custom_cake.custom_cake": "自定义蛋糕",
+  "item.custom_cake.watermelon_crumble": "西瓜碎块",
+  "item.custom_cake.beetroot_crumble": "甜菜碎块",
+  "item.custom_cake.potato_crumble": "马铃薯碎块",
+  "item.custom_cake.apple_crumble": "苹果碎块",
+  "item.custom_cake.carrot_crumble": "胡萝卜碎块",
+  "item.custom_cake.golden_carrot_crumble": "金胡萝卜碎块",
+  "item.custom_cake.enchanted_golden_apple_crumble": "附魔金苹果碎块",
+  "item.custom_cake.pufferfish_crumble": "河豚碎块",
+  "item.custom_cake.golden_apple_crumble": "金苹果碎块",
+  "item.custom_cake.poisonous_potato_crumble": "毒马铃薯碎块",
+  "item.custom_cake.rotten_flesh_crumble": "腐肉碎块",
+  "item.custom_cake.chorus_fruit_crumble": "紫颂果碎块"
 }
