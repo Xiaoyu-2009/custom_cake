@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "GPL-3.0"
+
+[[mods]]
+modId = "custom_cake"
+version = "${version}"
+displayName = "Custom Cake"
+logoFile = "assets/custom_cake/icon.png"
+authors = "Xiaoyu_2009, wuyingfeng"
+description = '''
+This is a mod that allows you to create cakes based on any of your ideas. If you're interested in cakes, you should definitely try it out!
+'''
+
+[[dependencies.custom_cake]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.custom_cake]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.custom_cake]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "custom_cake",
+  "version": "${version}",
+  "name": "Custom Cake",
+  "description": "TThis is a mod that allows you to create cakes based on any of your ideas. If you're interested in cakes, you should definitely try it out!",
+  "authors": [
+    "Xiaoyu_2009",
+    "wuyingfeng"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/custom_cake/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.xiaoyu.custom_cake.fabric.CustomCakeFabric"
+    ],
+    "client": [
+      "dev.xiaoyu.custom_cake.fabric.client.CustomCakeFabricClient"
+    ]
+  },
+  "mixins": [
+    "custom_cake.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
