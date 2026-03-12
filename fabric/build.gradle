@@ -45,6 +45,12 @@ dependencies {
     // Saturation Plus (吃不停)
     modImplementation "curse.maven:saturation-plus-959951:7516112"
 
+    // 玉
+    modImplementation "curse.maven:jade-324717:6291330"
+
+    // jei
+    modImplementation "curse.maven:jei-238222:7391694"
+
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
 }

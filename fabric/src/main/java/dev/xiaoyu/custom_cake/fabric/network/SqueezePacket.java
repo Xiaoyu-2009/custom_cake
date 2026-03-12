@@ -13,8 +13,7 @@ public class SqueezePacket {
     
     public static void initServer() {
         ServerPlayNetworking.registerGlobalReceiver(ID, (server, player, handler, buf, responseSender) -> {
-            boolean isKeyDown = buf.readBoolean();
-            server.execute(() -> SqueezeTransform.tick(player, isKeyDown));
+            server.execute(() -> SqueezeTransform.tick(player, buf.readBoolean()));
         });
     }
     

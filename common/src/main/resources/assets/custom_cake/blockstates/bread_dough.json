@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "custom_cake:block/bread_dough"
+    }
+  }
+}

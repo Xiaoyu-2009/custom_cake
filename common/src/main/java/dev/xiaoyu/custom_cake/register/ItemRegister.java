@@ -44,9 +44,9 @@ public final class ItemRegister {
     // 紫颂果碎块
     public static final RegistrySupplier<Item> CHORUS_FRUIT_CRUMBLE = ITEM.register("chorus_fruit_crumble", ChorusFruitCrumble::new);
 
-    // 自定义蛋糕
-    public static final RegistrySupplier<Item> CUSTOM_CAKE = ITEM.register("custom_cake", CustomCake::new);
-    
+    // 面包胚
+    public static final RegistrySupplier<Item> BREAD_DOUGH = ITEM.register("bread_dough", BreadDough::new);
+
     public static void init() {
         ITEM.register();
     }

@@ -8,9 +8,9 @@ import net.minecraft.world.level.block.Block;
 public final class BlockRegister {
     public static final DeferredRegister<Block> BLOCK = DeferredRegister.create("custom_cake", Registries.BLOCK);
     
-    // 自定义蛋糕
-    public static final RegistrySupplier<Block> CUSTOM_CAKE_BLOCK = BLOCK.register("custom_cake", CustomCakeBlock::new);
-    
+    // 面包胚
+    public static final RegistrySupplier<Block> BREAD_DOUGH_BLOCK = BLOCK.register("bread_dough", BreadDoughBlock::new);
+
     public static void init() {
         BLOCK.register();
     }

@@ -50,9 +50,7 @@ public class SqueezePacket {
     private void handle(Supplier<NetworkEvent.Context> ctx) {
         ctx.get().enqueueWork(() -> {
             ServerPlayer player = ctx.get().getSender();
-            if (player != null) {
-                SqueezeTransform.tick(player, isKeyDown);
-            }
+            if (player != null) SqueezeTransform.tick(player, isKeyDown);
         });
         ctx.get().setPacketHandled(true);
     }
