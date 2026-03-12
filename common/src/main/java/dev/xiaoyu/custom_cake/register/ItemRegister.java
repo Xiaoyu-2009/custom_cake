@@ -46,6 +46,9 @@ public final class ItemRegister {
 
     // 面包胚
     public static final RegistrySupplier<Item> BREAD_DOUGH = ITEM.register("bread_dough", BreadDough::new);
+    
+    // 基础蛋糕
+    public static final RegistrySupplier<Item> BASE_CAKE = ITEM.register("base_cake", BaseCake::new);
 
     public static void init() {
         ITEM.register();

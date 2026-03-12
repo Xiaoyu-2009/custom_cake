@@ -10,6 +10,9 @@ public final class BlockRegister {
     
     // 面包胚
     public static final RegistrySupplier<Block> BREAD_DOUGH_BLOCK = BLOCK.register("bread_dough", BreadDoughBlock::new);
+    
+    // 基础蛋糕
+    public static final RegistrySupplier<Block> BASE_CAKE_BLOCK = BLOCK.register("base_cake", BaseCakeBlock::new);
 
     public static void init() {
         BLOCK.register();
