@@ -1,13 +1,10 @@
-package dev.xiaoyu.custom_cake.block;
+package dev.xiaoyu.custom_cake.block.cake;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.*;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.*;
 import org.jetbrains.annotations.NotNull;
 

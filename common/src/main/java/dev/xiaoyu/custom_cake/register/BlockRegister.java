@@ -2,6 +2,7 @@ package dev.xiaoyu.custom_cake.register;
 
 import dev.architectury.registry.registries.*;
 import dev.xiaoyu.custom_cake.block.*;
+import dev.xiaoyu.custom_cake.block.cake.BaseCakeBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
 
