@@ -1,23 +1,15 @@
 package dev.xiaoyu.custom_cake.block.cake;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.phys.shapes.*;
-import org.jetbrains.annotations.NotNull;
 
 public class BaseCakeBlock extends CakeBlock {
     public BaseCakeBlock() {
         super(Properties.of()
             .sound(SoundType.WOOL)
             .noOcclusion());
-    }
-
-    @Override
-    public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return Block.box(1, 0, 1, 15, 8, 15);
     }
 
     /*@Override
