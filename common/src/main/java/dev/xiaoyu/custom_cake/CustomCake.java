@@ -28,10 +28,12 @@ public final class CustomCake {
     public static final RegistrySupplier<Item> ROTTEN_FLESH_CRUMBLE = ItemRegister.ROTTEN_FLESH_CRUMBLE;
     public static final RegistrySupplier<Item> CHORUS_FRUIT_CRUMBLE = ItemRegister.CHORUS_FRUIT_CRUMBLE;
     public static final RegistrySupplier<Item> BASE_CAKE = ItemRegister.BASE_CAKE;
+    public static final RegistrySupplier<Item> CREAM = ItemRegister.CREAM;
 
     public static void init() {
         BlockRegister.init();
         CreativeTabRegister.init();
         ItemRegister.init();
+        BlockEntityRegister.init();
     }
 }

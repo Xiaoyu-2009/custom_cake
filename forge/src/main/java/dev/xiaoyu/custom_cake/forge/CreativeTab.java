@@ -22,6 +22,7 @@ public final class CreativeTab {
                 event.accept(CustomCake.CHORUS_FRUIT_CRUMBLE.get());
                 event.accept(CustomCake.BREAD_DOUGH.get());
                 event.accept(CustomCake.BASE_CAKE.get());
+                event.accept(CustomCake.CREAM.get());
             }
         });
     }
