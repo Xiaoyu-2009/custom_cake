@@ -60,6 +60,42 @@ public final class ItemRegister {
     
     // 毒马铃薯蛋糕
     public static final RegistrySupplier<Item> POISONOUS_POTATO_CAKE = ITEM.register("poisonous_potato_cake", PoisonousPotatoCake::new);
+    
+    // 苹果蛋糕
+    public static final RegistrySupplier<Item> APPLE_CAKE = ITEM.register("apple_cake", AppleCake::new);
+    
+    // 甜菜根蛋糕
+    public static final RegistrySupplier<Item> BEETROOT_CAKE = ITEM.register("beetroot_cake", BeetrootCake::new);
+    
+    // 紫颂果蛋糕
+    public static final RegistrySupplier<Item> CHORUS_FRUIT_CAKE = ITEM.register("chorus_fruit_cake", ChorusFruitCake::new);
+    
+    // 金苹果蛋糕
+    public static final RegistrySupplier<Item> GOLDEN_APPLE_CAKE = ITEM.register("golden_apple_cake", GoldenAppleCake::new);
+    
+    // 附魔金苹果蛋糕
+    public static final RegistrySupplier<Item> ENCHANTED_GOLDEN_APPLE_CAKE = ITEM.register("enchanted_golden_apple_cake", EnchantedGoldenAppleCake::new);
+    
+    // 西瓜蛋糕
+    public static final RegistrySupplier<Item> WATERMELON_CAKE = ITEM.register("watermelon_cake", WatermelonCake::new);
+    
+    // 腐肉蛋糕
+    public static final RegistrySupplier<Item> ROTTEN_FLESH_CAKE = ITEM.register("rotten_flesh_cake", RottenFleshCake::new);
+    
+    // 河豚蛋糕
+    public static final RegistrySupplier<Item> PUFFERFISH_CAKE = ITEM.register("pufferfish_cake", PufferfishCake::new);
+    
+    // 胡萝卜蛋糕
+    public static final RegistrySupplier<Item> CARROT_CAKE = ITEM.register("carrot_cake", CarrotCake::new);
+    
+    // 金胡萝卜蛋糕
+    public static final RegistrySupplier<Item> GOLDEN_CARROT_CAKE = ITEM.register("golden_carrot_cake", GoldenCarrotCake::new);
+    
+    // 马铃薯蛋糕
+    public static final RegistrySupplier<Item> POTATO_CAKE = ITEM.register("potato_cake", PotatoCake::new);
+    
+    // 甜浆果蛋糕
+    public static final RegistrySupplier<Item> SWEET_BERRIES_CAKE = ITEM.register("sweet_berries_cake", SweetBerriesCake::new);
 
     public static void init() {
         ITEM.register();

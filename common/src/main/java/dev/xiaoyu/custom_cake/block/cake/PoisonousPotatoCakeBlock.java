@@ -35,7 +35,7 @@ public class PoisonousPotatoCakeBlock extends CakeBlock implements EntityBlock {
         InteractionResult result = super.use(state, level, pos, player, hand, hit);
         if (!level.isClientSide() && result.consumesAction()) {
             if (state.getValue(BITES) == 0 && level.getBlockState(pos).getValue(BITES) == 1) {
-                player.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 0));
+                player.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 0)); // 中毒
             }
         }
 

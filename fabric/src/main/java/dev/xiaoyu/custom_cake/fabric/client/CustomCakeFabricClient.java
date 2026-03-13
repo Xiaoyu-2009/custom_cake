@@ -1,5 +1,6 @@
 package dev.xiaoyu.custom_cake.fabric.client;
 
+import dev.xiaoyu.custom_cake.fabric.client.renderer.RendererRegistry;
 import dev.xiaoyu.custom_cake.fabric.network.SqueezePacket;
 import dev.xiaoyu.custom_cake.register.KeybindingRegister;
 import net.fabricmc.api.ClientModInitializer;
@@ -11,6 +12,7 @@ public final class CustomCakeFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         KeybindingRegister.register();
+        RendererRegistry.register();
         
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             if (Minecraft.getInstance().player == null) return;

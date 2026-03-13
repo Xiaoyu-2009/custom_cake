@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"bottom": "block/cake_bottom",
-		"top": "custom_cake:block/cake/apple/apple_cake_top",
-		"particle": "block/cake_side",
-		"side": "block/cake_side"
+		"top": "custom_cake:block/cake/apple/apple_top",
+		"particle": "custom_cake:block/cake/apple/apple_side",
+		"side": "custom_cake:block/cake/apple/apple_side"
 	},
 	"elements": [
 		{

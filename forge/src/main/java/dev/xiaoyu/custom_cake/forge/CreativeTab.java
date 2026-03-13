@@ -25,6 +25,18 @@ public final class CreativeTab {
                 event.accept(CustomCake.CREAM.get());
                 event.accept(CustomCake.POISONOUS_POTATO_CAKE.get());
                 event.accept(CustomCake.BASE_CAKE_CREAM.get());
+                event.accept(CustomCake.APPLE_CAKE.get());
+                event.accept(CustomCake.BEETROOT_CAKE.get());
+                event.accept(CustomCake.CHORUS_FRUIT_CAKE.get());
+                event.accept(CustomCake.GOLDEN_APPLE_CAKE.get());
+                event.accept(CustomCake.ENCHANTED_GOLDEN_APPLE_CAKE.get());
+                event.accept(CustomCake.WATERMELON_CAKE.get());
+                event.accept(CustomCake.ROTTEN_FLESH_CAKE.get());
+                event.accept(CustomCake.PUFFERFISH_CAKE.get());
+                event.accept(CustomCake.CARROT_CAKE.get());
+                event.accept(CustomCake.GOLDEN_CARROT_CAKE.get());
+                event.accept(CustomCake.POTATO_CAKE.get());
+                event.accept(CustomCake.SWEET_BERRIES_CAKE.get());
             }
         });
     }

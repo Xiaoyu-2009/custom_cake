@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"bottom": "block/cake_bottom",
-		"top": "custom_cake:block/cake/base/base_top",
-		"particle": "block/cake_side",
-		"side": "block/cake_side"
+		"top": "custom_cake:block/cake/rotten_flesh/rotten_flesh_top",
+		"particle": "custom_cake:block/cake/rotten_flesh/rotten_flesh_side",
+		"side": "custom_cake:block/cake/rotten_flesh/rotten_flesh_side"
 	},
 	"elements": [
 		{
@@ -20,26 +20,5 @@
 				"down": {"uv": [1, 1, 15, 15], "texture": "#bottom", "cullface": "down"}
 			}
 		}
-	],
-	"display": {
-		"thirdperson_righthand": {
-			"translation": [0, 0, -7]
-		},
-		"thirdperson_lefthand": {
-			"translation": [0, 0, -7]
-		},
-		"ground": {
-			"translation": [0, 4, 0]
-		},
-		"gui": {
-			"rotation": [90, 0, 0]
-		},
-		"head": {
-			"translation": [0, 14.25, 0]
-		},
-		"fixed": {
-			"rotation": [-90, 0, 0],
-			"translation": [0, 0, -6.25]
-		}
-	}
+	]
 }
