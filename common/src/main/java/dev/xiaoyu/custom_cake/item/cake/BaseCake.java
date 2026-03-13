@@ -1,4 +1,4 @@
-package dev.xiaoyu.custom_cake.item;
+package dev.xiaoyu.custom_cake.item.cake;
 
 import dev.xiaoyu.custom_cake.register.BlockRegister;
 import net.minecraft.world.item.*;

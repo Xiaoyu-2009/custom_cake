@@ -21,6 +21,7 @@ public final class CreativeTab {
             entries.accept(CustomCake.BREAD_DOUGH.get());
             entries.accept(CustomCake.BASE_CAKE.get());
             entries.accept(CustomCake.CREAM.get());
+            entries.accept(CustomCake.POISONOUS_POTATO_CAKE.get());
         });
     }
 }

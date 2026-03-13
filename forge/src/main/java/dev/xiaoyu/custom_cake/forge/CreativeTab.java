@@ -23,6 +23,7 @@ public final class CreativeTab {
                 event.accept(CustomCake.BREAD_DOUGH.get());
                 event.accept(CustomCake.BASE_CAKE.get());
                 event.accept(CustomCake.CREAM.get());
+                event.accept(CustomCake.POISONOUS_POTATO_CAKE.get());
             }
         });
     }

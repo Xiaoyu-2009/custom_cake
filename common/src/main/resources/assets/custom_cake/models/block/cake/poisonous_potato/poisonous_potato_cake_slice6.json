@@ -3,9 +3,9 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"bottom": "block/cake_bottom",
-		"top": "custom_cake:block/cake/base/base_top",
-		"particle": "block/cake_side",
-		"side": "block/cake_side",
+		"top": "custom_cake:block/cake/poisonous_potato/poisonous_potato_top",
+		"particle": "custom_cake:block/cake/poisonous_potato/poisonous_potato_side",
+		"side": "custom_cake:block/cake/poisonous_potato/poisonous_potato_side",
 		"inside": "block/cake_inner"
 	},
 	"elements": [

@@ -13,6 +13,7 @@ public final class CustomCake {
 
     public static final RegistrySupplier<Block> BREAD_DOUGH_BLOCK = BlockRegister.BREAD_DOUGH_BLOCK;
     public static final RegistrySupplier<Block> BASE_CAKE_BLOCK = BlockRegister.BASE_CAKE_BLOCK;
+    public static final RegistrySupplier<Block> POISONOUS_POTATO_CAKE_BLOCK = BlockRegister.POISONOUS_POTATO_CAKE_BLOCK;
     
     public static final RegistrySupplier<Item> BREAD_DOUGH = ItemRegister.BREAD_DOUGH;
     public static final RegistrySupplier<Item> WATERMELON_CRUMBLE = ItemRegister.WATERMELON_CRUMBLE;
@@ -28,6 +29,7 @@ public final class CustomCake {
     public static final RegistrySupplier<Item> ROTTEN_FLESH_CRUMBLE = ItemRegister.ROTTEN_FLESH_CRUMBLE;
     public static final RegistrySupplier<Item> CHORUS_FRUIT_CRUMBLE = ItemRegister.CHORUS_FRUIT_CRUMBLE;
     public static final RegistrySupplier<Item> BASE_CAKE = ItemRegister.BASE_CAKE;
+    public static final RegistrySupplier<Item> POISONOUS_POTATO_CAKE = ItemRegister.POISONOUS_POTATO_CAKE;
     public static final RegistrySupplier<Item> CREAM = ItemRegister.CREAM;
 
     public static void init() {
