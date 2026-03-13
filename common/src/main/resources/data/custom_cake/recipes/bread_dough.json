@@ -1,0 +1,15 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "swords"
+    },
+    {
+      "item": "bread"
+    }
+  ],
+  "result": {
+    "item": "custom_cake:bread_dough",
+    "count": 1
+  }
+}

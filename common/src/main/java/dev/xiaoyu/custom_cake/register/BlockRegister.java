@@ -19,6 +19,18 @@ public final class BlockRegister {
     // 奶油蛋糕
     public static final RegistrySupplier<Block> BASE_CAKE_CREAM_BLOCK = BLOCK.register("base_cake_cream", BaseCakeCreamBlock::new);
     
+    // 奶油蛋糕+
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_B_BLOCK = BLOCK.register("base_cake_cream_b", BaseCakeCreamBBlock::new);
+    
+    // 奶油蛋糕++
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_C_BLOCK = BLOCK.register("base_cake_cream_c", BaseCakeCreamCBlock::new);
+    
+    // 奶油蛋糕+++
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_D_BLOCK = BLOCK.register("base_cake_cream_d", BaseCakeCreamDBlock::new);
+    
+    // 奶油蛋糕++++
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_E_BLOCK = BLOCK.register("base_cake_cream_e", BaseCakeCreamEBlock::new);
+    
     // 毒马铃薯蛋糕
     public static final RegistrySupplier<Block> POISONOUS_POTATO_CAKE_BLOCK = BLOCK.register("poisonous_potato_cake", PoisonousPotatoCakeBlock::new);
     

@@ -3,7 +3,7 @@ package dev.xiaoyu.custom_cake.mixin;
 import dev.xiaoyu.custom_cake.CustomCake;
 import dev.xiaoyu.custom_cake.block.entity.cake.BaseCakeBlockEntity;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,7 +15,7 @@ public class BlockItemMixin {
     
     @Inject(method = "useOn", at = @At("HEAD"), cancellable = true)
     private void customCake$useOnSweetBerries(UseOnContext context, CallbackInfoReturnable<InteractionResult> cir) {
-        if (context.getLevel().isClientSide()) return;
+        if (context.getLevel().isClientSide() && !context.getItemInHand().is(Items.SWEET_BERRIES)) return;
         var level = context.getLevel();
         var pos = context.getClickedPos();
         var player = context.getPlayer();

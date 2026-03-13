@@ -10,7 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 @Mod(CustomCake.MOD_ID)
 public final class CustomCakeForge {
 
-    @SuppressWarnings({"removal", "InstantiationOfUtilityClass"})
+    @SuppressWarnings("removal")
     public CustomCakeForge() {
         var modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         EventBuses.registerModEventBus(CustomCake.MOD_ID, modEventBus);

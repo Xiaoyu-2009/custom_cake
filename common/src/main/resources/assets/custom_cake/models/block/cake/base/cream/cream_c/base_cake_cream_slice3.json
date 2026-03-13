@@ -4,14 +4,14 @@
 	"textures": {
 		"bottom": "block/cake_bottom",
 		"top": "custom_cake:block/cake/base/base_top",
-		"particle": "custom_cake:block/cake/base/cream/cream_side",
-		"side": "custom_cake:block/cake/base/cream/cream_side",
-		"inside": "custom_cake:block/cake/base/cream/cream_inner"
+		"particle": "custom_cake:block/cake/base/cream/cream_c/cream_side",
+		"side": "custom_cake:block/cake/base/cream/cream_c/cream_side",
+		"inside": "custom_cake:block/cake/base/cream/cream_c/cream_inner"
 	},
 	"elements": [
 		{
 			"from": [7, 0, 1],
-			"to": [15, 11, 15],
+			"to": [15, 17, 15],
 			"faces": {
 				"north": {"uv": [1, 8, 9, 16], "texture": "#side"},
 				"east": {"uv": [1, 8, 15, 16], "texture": "#side"},

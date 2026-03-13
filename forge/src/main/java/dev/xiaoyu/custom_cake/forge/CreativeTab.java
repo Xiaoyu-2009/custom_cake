@@ -25,6 +25,10 @@ public final class CreativeTab {
                 event.accept(CustomCake.CREAM.get());
                 event.accept(CustomCake.POISONOUS_POTATO_CAKE.get());
                 event.accept(CustomCake.BASE_CAKE_CREAM.get());
+                event.accept(CustomCake.BASE_CAKE_CREAM_B.get());
+                event.accept(CustomCake.BASE_CAKE_CREAM_C.get());
+                event.accept(CustomCake.BASE_CAKE_CREAM_D.get());
+                event.accept(CustomCake.BASE_CAKE_CREAM_E.get());
                 event.accept(CustomCake.APPLE_CAKE.get());
                 event.accept(CustomCake.BEETROOT_CAKE.get());
                 event.accept(CustomCake.CHORUS_FRUIT_CAKE.get());

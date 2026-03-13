@@ -21,6 +21,10 @@ public final class CustomCake {
     public static final RegistrySupplier<Block> ENCHANTED_GOLDEN_APPLE_CAKE_BLOCK = BlockRegister.ENCHANTED_GOLDEN_APPLE_CAKE_BLOCK;
     public static final RegistrySupplier<Block> WATERMELON_CAKE_BLOCK = BlockRegister.WATERMELON_CAKE_BLOCK;
     public static final RegistrySupplier<Block> BASE_CAKE_CREAM_BLOCK = BlockRegister.BASE_CAKE_CREAM_BLOCK;
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_B_BLOCK = BlockRegister.BASE_CAKE_CREAM_B_BLOCK;
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_C_BLOCK = BlockRegister.BASE_CAKE_CREAM_C_BLOCK;
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_D_BLOCK = BlockRegister.BASE_CAKE_CREAM_D_BLOCK;
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_E_BLOCK = BlockRegister.BASE_CAKE_CREAM_E_BLOCK;
     public static final RegistrySupplier<Block> ROTTEN_FLESH_CAKE_BLOCK = BlockRegister.ROTTEN_FLESH_CAKE_BLOCK;
     public static final RegistrySupplier<Block> PUFFERFISH_CAKE_BLOCK = BlockRegister.PUFFERFISH_CAKE_BLOCK;
     public static final RegistrySupplier<Block> CARROT_CAKE_BLOCK = BlockRegister.CARROT_CAKE_BLOCK;
@@ -43,6 +47,10 @@ public final class CustomCake {
     public static final RegistrySupplier<Item> CHORUS_FRUIT_CRUMBLE = ItemRegister.CHORUS_FRUIT_CRUMBLE;
     public static final RegistrySupplier<Item> BASE_CAKE = ItemRegister.BASE_CAKE;
     public static final RegistrySupplier<Item> BASE_CAKE_CREAM = ItemRegister.BASE_CAKE_CREAM;
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_B = ItemRegister.BASE_CAKE_CREAM_B;
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_C = ItemRegister.BASE_CAKE_CREAM_C;
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_D = ItemRegister.BASE_CAKE_CREAM_D;
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_E = ItemRegister.BASE_CAKE_CREAM_E;
     public static final RegistrySupplier<Item> POISONOUS_POTATO_CAKE = ItemRegister.POISONOUS_POTATO_CAKE;
     public static final RegistrySupplier<Item> APPLE_CAKE = ItemRegister.APPLE_CAKE;
     public static final RegistrySupplier<Item> BEETROOT_CAKE = ItemRegister.BEETROOT_CAKE;

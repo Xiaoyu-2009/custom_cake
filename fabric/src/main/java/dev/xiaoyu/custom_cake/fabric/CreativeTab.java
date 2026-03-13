@@ -23,6 +23,10 @@ public final class CreativeTab {
             entries.accept(CustomCake.CREAM.get());
             entries.accept(CustomCake.POISONOUS_POTATO_CAKE.get());
             entries.accept(CustomCake.BASE_CAKE_CREAM.get());
+            entries.accept(CustomCake.BASE_CAKE_CREAM_B.get());
+            entries.accept(CustomCake.BASE_CAKE_CREAM_C.get());
+            entries.accept(CustomCake.BASE_CAKE_CREAM_D.get());
+            entries.accept(CustomCake.BASE_CAKE_CREAM_E.get());
             entries.accept(CustomCake.APPLE_CAKE.get());
             entries.accept(CustomCake.BEETROOT_CAKE.get());
             entries.accept(CustomCake.CHORUS_FRUIT_CAKE.get());

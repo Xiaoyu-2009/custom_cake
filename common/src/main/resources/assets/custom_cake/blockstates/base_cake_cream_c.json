@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "bites=0": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream"
+    },
+    "bites=1": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream_slice1"
+    },
+    "bites=2": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream_slice2"
+    },
+    "bites=3": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream_slice3"
+    },
+    "bites=4": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream_slice4"
+    },
+    "bites=5": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream_slice5"
+    },
+    "bites=6": {
+      "model": "custom_cake:block/cake/base/cream/cream_c/base_cake_cream_slice6"
+    }
+  }
+}

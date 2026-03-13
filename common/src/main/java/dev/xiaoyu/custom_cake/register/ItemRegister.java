@@ -58,6 +58,18 @@ public final class ItemRegister {
     // 奶油蛋糕
     public static final RegistrySupplier<Item> BASE_CAKE_CREAM = ITEM.register("base_cake_cream", BaseCreamCake::new);
     
+    // 奶油蛋糕+
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_B = ITEM.register("base_cake_cream_b", BaseCreamBCake::new);
+    
+    // 奶油蛋糕++
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_C = ITEM.register("base_cake_cream_c", BaseCreamCCake::new);
+    
+    // 奶油蛋糕+++
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_D = ITEM.register("base_cake_cream_d", BaseCreamDCake::new);
+    
+    // 奶油蛋糕++++
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM_E = ITEM.register("base_cake_cream_e", BaseCreamECake::new);
+    
     // 毒马铃薯蛋糕
     public static final RegistrySupplier<Item> POISONOUS_POTATO_CAKE = ITEM.register("poisonous_potato_cake", PoisonousPotatoCake::new);
     

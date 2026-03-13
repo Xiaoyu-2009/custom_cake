@@ -4,8 +4,8 @@
 	"textures": {
 		"bottom": "block/cake_bottom",
 		"top": "custom_cake:block/cake/base/base_top",
-		"particle": "custom_cake:block/cake/base/cream/cream_side",
-		"side": "custom_cake:block/cake/base/cream/cream_side"
+		"particle": "custom_cake:block/cake/base/cream/cream_a/cream_side",
+		"side": "custom_cake:block/cake/base/cream/cream_a/cream_side"
 	},
 	"elements": [
 		{

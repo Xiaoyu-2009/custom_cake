@@ -6,6 +6,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.block.CakeBlock;
 import org.jetbrains.annotations.NotNull;
 
 public class CarrotCrumble extends Item {
@@ -25,8 +26,9 @@ public class CarrotCrumble extends Item {
         if (context.getLevel().isClientSide()) return InteractionResult.SUCCESS;
         var level = context.getLevel();
         var pos = context.getClickedPos();
+        var blockState = level.getBlockState(pos);
 
-        if (level.getBlockState(pos).getBlock() == CustomCake.BASE_CAKE_BLOCK.get()) {
+        if (blockState.getBlock() == CustomCake.BASE_CAKE_BLOCK.get() && blockState.getValue(CakeBlock.BITES) == 0) {
             level.setBlockAndUpdate(pos, CustomCake.CARROT_CAKE_BLOCK.get().defaultBlockState());
 
             if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity)
