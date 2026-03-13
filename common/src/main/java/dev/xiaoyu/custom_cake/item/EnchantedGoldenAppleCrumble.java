@@ -28,15 +28,23 @@ public class EnchantedGoldenAppleCrumble extends Item {
         var level = context.getLevel();
         var pos = context.getClickedPos();
         var blockState = level.getBlockState(pos);
+        var currentBlock = blockState.getBlock();
 
-        if (blockState.getBlock() == CustomCake.BASE_CAKE_BLOCK.get() && blockState.getValue(CakeBlock.BITES) == 0) {
+        if (blockState.hasProperty(CakeBlock.BITES) && blockState.getValue(CakeBlock.BITES) != 0)
+            return InteractionResult.SUCCESS;
+
+        if (currentBlock == CustomCake.BASE_CAKE_BLOCK.get()) {
             level.setBlockAndUpdate(pos, CustomCake.ENCHANTED_GOLDEN_APPLE_CAKE_BLOCK.get().defaultBlockState());
-
             if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity)
                 cakeEntity.getPersistentData().putBoolean("created_by_enchanted_golden_apple_crumble", true);
-            
+            if (!context.getItemInHand().isEmpty()) context.getItemInHand().shrink(1);
+        } else if (currentBlock == CustomCake.PUFFERFISH_CREAM_CAKE_BLOCK.get()) {
+            level.setBlockAndUpdate(pos, CustomCake.PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE_BLOCK.get().defaultBlockState());
+            if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity)
+                cakeEntity.getPersistentData().putBoolean("created_by_pufferfish_cream_golden_apple", true);
             if (!context.getItemInHand().isEmpty()) context.getItemInHand().shrink(1);
         }
+        
         return InteractionResult.SUCCESS;
     }
     

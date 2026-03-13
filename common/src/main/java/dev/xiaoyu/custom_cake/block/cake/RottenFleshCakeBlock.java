@@ -23,8 +23,8 @@ public class RottenFleshCakeBlock extends CakeBlock implements EntityBlock {
     @Override
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (player.isShiftKeyDown() && !level.isClientSide()) {
-            if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity) {
-                if (cakeEntity.getPersistentData().getBoolean("created_by_rotten_flesh_crumble") && state.getValue(BITES) == 0) {
+            if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity) {
+                if (state.getValue(BITES) == 0) {
                     level.setBlockAndUpdate(pos, CustomCake.BASE_CAKE_BLOCK.get().defaultBlockState());
                     popResource(level, pos, CustomCake.ROTTEN_FLESH_CRUMBLE.get().getDefaultInstance());
                     return InteractionResult.SUCCESS;

@@ -108,6 +108,12 @@ public final class ItemRegister {
     
     // 甜浆果蛋糕
     public static final RegistrySupplier<Item> SWEET_BERRIES_CAKE = ITEM.register("sweet_berries_cake", SweetBerriesCake::new);
+    
+    // 河豚奶油蛋糕
+    public static final RegistrySupplier<Item> PUFFERFISH_CREAM_CAKE = ITEM.register("pufferfish_cream_cake", PufferfishCreamCake::new);
+    
+    // 河豚奶油金苹果蛋糕
+    public static final RegistrySupplier<Item> PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE = ITEM.register("pufferfish_cream_golden_apple_cake", PufferfishCreamGoldenAppleCake::new);
 
     public static void init() {
         ITEM.register();

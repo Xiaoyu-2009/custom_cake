@@ -31,6 +31,8 @@ public final class CustomCake {
     public static final RegistrySupplier<Block> GOLDEN_CARROT_CAKE_BLOCK = BlockRegister.GOLDEN_CARROT_CAKE_BLOCK;
     public static final RegistrySupplier<Block> POTATO_CAKE_BLOCK = BlockRegister.POTATO_CAKE_BLOCK;
     public static final RegistrySupplier<Block> SWEET_BERRIES_CAKE_BLOCK = BlockRegister.SWEET_BERRIES_CAKE_BLOCK;
+    public static final RegistrySupplier<Block> PUFFERFISH_CREAM_CAKE_BLOCK = BlockRegister.PUFFERFISH_CREAM_CAKE_BLOCK;
+    public static final RegistrySupplier<Block> PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE_BLOCK = BlockRegister.PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE_BLOCK;
     
     public static final RegistrySupplier<Item> BREAD_DOUGH = ItemRegister.BREAD_DOUGH;
     public static final RegistrySupplier<Item> WATERMELON_CRUMBLE = ItemRegister.WATERMELON_CRUMBLE;
@@ -65,6 +67,8 @@ public final class CustomCake {
     public static final RegistrySupplier<Item> GOLDEN_CARROT_CAKE = ItemRegister.GOLDEN_CARROT_CAKE;
     public static final RegistrySupplier<Item> POTATO_CAKE = ItemRegister.POTATO_CAKE;
     public static final RegistrySupplier<Item> SWEET_BERRIES_CAKE = ItemRegister.SWEET_BERRIES_CAKE;
+    public static final RegistrySupplier<Item> PUFFERFISH_CREAM_CAKE = ItemRegister.PUFFERFISH_CREAM_CAKE;
+    public static final RegistrySupplier<Item> PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE = ItemRegister.PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE;
 
     public static void init() {
         BlockRegister.init();

@@ -22,6 +22,7 @@ public class Cream extends Item {
         CAKE_UPGRADE_MAP.put(CustomCake.BASE_CAKE_CREAM_B_BLOCK.get(), CustomCake.BASE_CAKE_CREAM_C_BLOCK.get());
         CAKE_UPGRADE_MAP.put(CustomCake.BASE_CAKE_CREAM_C_BLOCK.get(), CustomCake.BASE_CAKE_CREAM_D_BLOCK.get());
         CAKE_UPGRADE_MAP.put(CustomCake.BASE_CAKE_CREAM_D_BLOCK.get(), CustomCake.BASE_CAKE_CREAM_E_BLOCK.get());
+        CAKE_UPGRADE_MAP.put(CustomCake.PUFFERFISH_CAKE_BLOCK.get(), CustomCake.PUFFERFISH_CREAM_CAKE_BLOCK.get());
     }
     
     public Cream() {

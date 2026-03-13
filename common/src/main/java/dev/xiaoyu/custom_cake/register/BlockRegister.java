@@ -69,6 +69,12 @@ public final class BlockRegister {
     
     // 甜浆果蛋糕
     public static final RegistrySupplier<Block> SWEET_BERRIES_CAKE_BLOCK = BLOCK.register("sweet_berries_cake", SweetBerriesCakeBlock::new);
+    
+    // 河豚奶油蛋糕
+    public static final RegistrySupplier<Block> PUFFERFISH_CREAM_CAKE_BLOCK = BLOCK.register("pufferfish_cream_cake", PufferfishCreamCakeBlock::new);
+    
+    // 河豚奶油金苹果蛋糕
+    public static final RegistrySupplier<Block> PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE_BLOCK = BLOCK.register("pufferfish_cream_golden_apple_cake", PufferfishCreamGoldenAppleCakeBlock::new);
 
     public static void init() {
         BLOCK.register();

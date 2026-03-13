@@ -39,6 +39,8 @@ public final class CreativeTab {
             entries.accept(CustomCake.GOLDEN_CARROT_CAKE.get());
             entries.accept(CustomCake.POTATO_CAKE.get());
             entries.accept(CustomCake.SWEET_BERRIES_CAKE.get());
+            entries.accept(CustomCake.PUFFERFISH_CREAM_CAKE.get());
+            entries.accept(CustomCake.PUFFERFISH_CREAM_GOLDEN_APPLE_CAKE.get());
         });
     }
 }
