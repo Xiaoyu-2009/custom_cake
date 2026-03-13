@@ -3,6 +3,7 @@ package dev.xiaoyu.custom_cake.register;
 import dev.architectury.registry.registries.*;
 import dev.xiaoyu.custom_cake.block.*;
 import dev.xiaoyu.custom_cake.block.cake.*;
+import dev.xiaoyu.custom_cake.block.cake.cream.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.Block;
 
@@ -14,6 +15,9 @@ public final class BlockRegister {
     
     // 基础蛋糕
     public static final RegistrySupplier<Block> BASE_CAKE_BLOCK = BLOCK.register("base_cake", BaseCakeBlock::new);
+
+    // 奶油蛋糕
+    public static final RegistrySupplier<Block> BASE_CAKE_CREAM_BLOCK = BLOCK.register("base_cake_cream", BaseCakeCreamBlock::new);
     
     // 毒马铃薯蛋糕
     public static final RegistrySupplier<Block> POISONOUS_POTATO_CAKE_BLOCK = BLOCK.register("poisonous_potato_cake", PoisonousPotatoCakeBlock::new);

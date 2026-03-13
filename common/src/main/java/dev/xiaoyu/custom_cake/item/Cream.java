@@ -17,13 +17,17 @@ public class Cream extends Item {
         if (context.getLevel().isClientSide()) return InteractionResult.SUCCESS;
         var level = context.getLevel();
         var pos = context.getClickedPos();
+        var blockState = level.getBlockState(pos);
 
-        if (level.getBlockState(pos).getBlock() == CustomCake.BREAD_DOUGH_BLOCK.get()) {
+        if (blockState.getBlock() == CustomCake.BREAD_DOUGH_BLOCK.get()) {
             level.setBlockAndUpdate(pos, CustomCake.BASE_CAKE_BLOCK.get().defaultBlockState());
-
             if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity)
-                cakeEntity.getPersistentData().putBoolean("created_by_cream", true);
-
+                cakeEntity.getPersistentData().putBoolean("from_bread_dough", true);
+            if (!context.getItemInHand().isEmpty()) context.getItemInHand().shrink(1);
+        } else if (blockState.getBlock() == CustomCake.BASE_CAKE_BLOCK.get()) {
+            level.setBlockAndUpdate(pos, CustomCake.BASE_CAKE_CREAM_BLOCK.get().defaultBlockState());
+            if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity)
+                cakeEntity.getPersistentData().putBoolean("from_base_cake", true);
             if (!context.getItemInHand().isEmpty()) context.getItemInHand().shrink(1);
         }
         return InteractionResult.SUCCESS;

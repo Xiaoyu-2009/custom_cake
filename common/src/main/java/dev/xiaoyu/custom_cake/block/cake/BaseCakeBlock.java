@@ -23,7 +23,7 @@ public class BaseCakeBlock extends CakeBlock implements EntityBlock {
     public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (player.isShiftKeyDown() && !level.isClientSide()) {
             if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity) {
-                if (cakeEntity.getPersistentData().getBoolean("created_by_cream") && state.getValue(BITES) == 0) {
+                if (cakeEntity.getPersistentData().getBoolean("from_bread_dough") && state.getValue(BITES) == 0) {
                     level.setBlockAndUpdate(pos, CustomCake.BREAD_DOUGH_BLOCK.get().defaultBlockState());
                     popResource(level, pos, CustomCake.CREAM.get().getDefaultInstance());
                     return InteractionResult.SUCCESS;

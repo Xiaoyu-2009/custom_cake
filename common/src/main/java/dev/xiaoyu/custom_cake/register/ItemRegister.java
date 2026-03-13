@@ -3,6 +3,7 @@ package dev.xiaoyu.custom_cake.register;
 import dev.architectury.registry.registries.*;
 import dev.xiaoyu.custom_cake.item.*;
 import dev.xiaoyu.custom_cake.item.cake.*;
+import dev.xiaoyu.custom_cake.item.cake.cream.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 
@@ -53,6 +54,9 @@ public final class ItemRegister {
     
     // 基础蛋糕
     public static final RegistrySupplier<Item> BASE_CAKE = ITEM.register("base_cake", BaseCake::new);
+
+    // 奶油蛋糕
+    public static final RegistrySupplier<Item> BASE_CAKE_CREAM = ITEM.register("base_cake_cream", BaseCreamCake::new);
     
     // 毒马铃薯蛋糕
     public static final RegistrySupplier<Item> POISONOUS_POTATO_CAKE = ITEM.register("poisonous_potato_cake", PoisonousPotatoCake::new);

@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"bottom": "block/cake_bottom",
-		"top": "custom_cake:block/cake/base/base_cake_top",
+		"top": "custom_cake:block/cake/base/base_top",
 		"particle": "block/cake_side",
 		"side": "block/cake_side"
 	},

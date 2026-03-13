@@ -24,9 +24,8 @@ public class BaseCakeBlockEntity extends BlockEntity {
     @Override
     public void load(CompoundTag tag) {
         super.load(tag);
-        if (tag.contains("PersistentData")) {
+        if (tag.contains("PersistentData"))
             persistentData.merge(tag.getCompound("PersistentData"));
-        }
     }
 
     public CompoundTag getPersistentData() {

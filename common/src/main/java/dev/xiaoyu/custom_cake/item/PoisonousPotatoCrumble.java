@@ -29,7 +29,7 @@ public class PoisonousPotatoCrumble extends Item {
             level.setBlockAndUpdate(pos, CustomCake.POISONOUS_POTATO_CAKE_BLOCK.get().defaultBlockState());
 
             if (level.getBlockEntity(pos) instanceof BaseCakeBlockEntity cakeEntity)
-                cakeEntity.getPersistentData().putBoolean("created_by_cream", true);
+                cakeEntity.getPersistentData().putBoolean("created_by_poisonous_crumble", true);
             
             if (!context.getItemInHand().isEmpty()) context.getItemInHand().shrink(1);
         }
